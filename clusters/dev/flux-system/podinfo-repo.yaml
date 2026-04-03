@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: podinfo
+  namespace: default
+spec:
+  interval: 60s
+  url: https://github.com/nealys984y/podinfo
+  ref:
+    branch: master
